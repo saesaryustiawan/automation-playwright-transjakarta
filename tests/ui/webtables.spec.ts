@@ -17,6 +17,7 @@ test.describe('Bulk insert users from CSV', { tag: '@regression' }, () => {
         department: record.department,
       };
 
+      // Show the row and field when CSV data is missing.
       for (const [field, value] of Object.entries(user)) {
         if (!value) {
           throw new Error(`CSV row ${index + 2} is missing the "${field}" value.`);

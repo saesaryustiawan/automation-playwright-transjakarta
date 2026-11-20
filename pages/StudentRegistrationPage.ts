@@ -1,6 +1,7 @@
 import { type Locator, type Page } from '@playwright/test';
 import { applicationPaths, type StudentRegistrationData } from '../data/test-data';
 
+// Fills the registration form and reads the result.
 export class StudentRegistrationPage {
   readonly confirmationModal: Locator;
 

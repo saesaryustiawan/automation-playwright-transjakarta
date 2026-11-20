@@ -2,6 +2,7 @@ import { expect, type Locator, type Page } from '@playwright/test';
 import { applicationPaths } from '../data/test-data';
 import { waitForPageAssets } from './page-readiness';
 
+// Handles actions on the Droppable page.
 export class DroppablePage {
   readonly draggable: Locator;
   readonly dropTarget: Locator;

@@ -2,6 +2,7 @@ import { type Locator, type Page } from '@playwright/test';
 import { applicationPaths } from '../data/test-data';
 import { waitForPageAssets } from './page-readiness';
 
+// Handles actions and box size on the Resizable page.
 export class ResizablePage {
   readonly resizableBox: Locator;
   readonly resizeHandle: Locator;
